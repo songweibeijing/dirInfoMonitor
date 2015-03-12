@@ -1,0 +1,12 @@
+{
+"test1":[{"path":"/var/log/"},
+        {"level":3},
+        {"excludes":["_ESGTEMP", "_TEMPLOCAL_"]},
+        {"is_counter_size":1}],
+
+"test2":[{"path":"/etc"},
+        {"level":1},
+        {"excludes":""},
+        {"is_counter_size":0}]
+}
+

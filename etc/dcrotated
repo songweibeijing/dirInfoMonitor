@@ -1,0 +1,16 @@
+daily
+
+rotate 7
+
+create
+
+compress
+
+/var/log/dircounter.log {
+	notifempty
+	missingok
+	size=100M
+	postrotate
+    	/bin/kill -USR2 `cat /var/run/dircounter.pid 2> /dev/null` 2> /dev/null || true
+    endscript
+}
